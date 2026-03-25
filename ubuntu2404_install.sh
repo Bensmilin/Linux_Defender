@@ -11,7 +11,7 @@ chmod o+r /usr/share/keyrings/microsoft-prod.gpg
 apt install apt-transport-https
 apt update
 apt install mdatp
-curl -o MicrosoftDefenderATPOnboardingLinuxServer.py https://raw.githubusercontent.com/Bensmilin/Linux_Defender/refs/heads/main/MicrosoftDefenderATPOnboardingLinuxServer.py?token=GHSAT0AAAAAADYYUWAEJBGF3SCKH2AXKSFE2OEMZ4A
+curl -o MicrosoftDefenderATPOnboardingLinuxServer.py https://raw.githubusercontent.com/Bensmilin/Linux_Defender/refs/heads/main/MicrosoftDefenderATPOnboardingLinuxServer.py
 mdatp health --field org_id
 python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 mdatp health --field org_id
